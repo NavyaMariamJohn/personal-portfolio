@@ -3,59 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #f9fafb;
-    color: #333;
-  
-}
-header {
-    background: linear-gradient(135deg, #6a5acd, #836fff);
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    padding: 3rem 1rem;
-    text-align: center;
+    background: #0b061a;
 }
-header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-}
-header p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 0.5rem;
-    font-weight: bold;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-section {
-    max-width: 900px;
-    margin: 2.5rem auto;
-    padding: 0 1rem;
-}
-section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    color: #6a5acd;
-}
-#projects div {
-    background: white;
-    padding: 1.2rem;
-    margin-bottom: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 ul {
-    list-style-type: square;
-    padding-left: 1.2rem;
+    list-style: none;
 }
-footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #eee;
-    margin-top: 3rem;
+a {
+    text-decoration: none;
+    color: white;
 }
