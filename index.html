@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> //responsive
-    <title>Navya M J | Portfolio</title> //tab title
-    <link rel="stylesheet" href="style.css"> //linking to style.css
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Navya M J | Portfolio</title> <!-- tab visibility -->
+    <link rel="stylesheet" href="style.css"> <!-- connect to style -->
 </head>
 <body>
+    <!-- Navigation -->
     <header>
         <nav>
-            <div class="logo">Navya</div>
+            <a href="#home" class="logo">Navya</a>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -19,36 +19,48 @@
             </ul>
         </nav>
     </header>
+    <!-- Home -->
     <section id="home">
         <div class="home-left">
+            <span class="intro-text">Hi, I’m</span>
             <h1>Navya Mariam John</h1>
             <p>B.Tech CSE Student | Interested in Software & Cybersecurity</p>
 
             <div class="buttons">
-                <button>Learn More</button>
-                <button>Contact Me</button>
+                <a href="#about" class="btn btn-primary">Learn More</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
         </div>
 
         <div class="home-right">
-            <!-- Your photo will go here -->
-            <div class="photo-circle"></div>
+            <div class="photo-circle">
+                <img src="nannu.jpg" alt="Portrait of Navya Mariam John">
+            </div>
         </div>
     </section>
-
-     <section id="about">
-        <h2>About Me</h2>
+  <!-- About -->
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+        </div>
     </section>
-
+ <!-- Projects -->
     <section id="projects">
-        <h2>Projects</h2>
+        <div class="section-content">
+            <h2>Projects</h2>
+        </div>
     </section>
-
+<!-- Skills -->
     <section id="skills">
-        <h2>Skills</h2>
+        <div class="section-content">
+            <h2>Skills</h2>
+        </div>
     </section>
-
+    <!-- Contact -->
     <section id="contact">
-        <h2>Contact</h2>
+        <div class="section-content">
+            <h2>Contact</h2>
+        </div>
     </section>
 </body>
+</html>
