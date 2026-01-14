@@ -245,3 +245,50 @@ nav ul li a:hover {
     opacity: 0.9;
     margin-bottom: 22px;
 }
+/*  Projects Section */
+
+#projects {
+    padding: 100px 80px;
+}
+
+#projects .section-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#projects h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    padding: 30px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
