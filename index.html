@@ -4,102 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navya M J | Portfolio</title>
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <a href="#home" class="logo">Navya</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- =========================
+     Navigation
+     ========================= -->
+<header>
+    <nav>
+        <a href="#home" class="logo">Navya</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Home -->
-    <section id="home">
-        <div class="home-left">
-            <span class="intro-text">Hi, I’m</span>
-            <h1>Navya Mariam John</h1>
-            <p>B.Tech CSE Student | Interested in Software & Cybersecurity</p>
+<!-- =========================
+     Home
+     ========================= -->
+<section id="home">
+    <div class="home-left">
+        <span class="intro-text">Hi, I’m</span>
+        <h1>Navya Mariam John</h1>
+        <p>B.Tech CSE Student | Interested in Software & Cybersecurity</p>
 
-            <div class="buttons">
-                <a href="#about" class="btn btn-primary">Learn More</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
-            </div>
+        <div class="buttons">
+            <a href="#about" class="btn btn-primary">Learn More</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
+    </div>
 
-        <div class="home-right">
-            <div class="photo-circle">
-                <img src="nannu.jpg" alt="Portrait of Navya Mariam John">
-            </div>
+    <div class="home-right">
+        <div class="photo-circle">
+            <img src="nannu.jpg" alt="Portrait of Navya Mariam John">
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About -->
-    <section id="about">
-        <div class="section-content">
-            <h2>About Me</h2>
+<!-- =========================
+     About
+     ========================= -->
+<section id="about">
+    <div class="section-content">
+        <h2>About Me</h2>
 
-            <div class="about-text">
-                <p>
-                    I am a B.Tech Computer Science and Engineering student with a growing interest in
-                    software development and cybersecurity. I enjoy building clean, reliable
-                    applications and learning how systems work beneath the surface.
-                </p>
+        <div class="about-text">
+            <p>
+                I am a B.Tech Computer Science and Engineering student with a growing interest in
+                software development and cybersecurity. I enjoy building clean, reliable
+                applications and learning how systems work beneath the surface.
+            </p>
 
-                <p>
-                    I have participated in technical events and hackathons, which helped me strengthen
-                    my problem-solving skills, teamwork, and practical understanding of development
-                    workflows. I am currently focused on improving my core programming skills while
-                    exploring security-oriented concepts and modern web technologies.
-                </p>
+            <p>
+                I have participated in technical events and hackathons, which helped me strengthen
+                my problem-solving skills, teamwork, and practical understanding of development
+                workflows. I am currently focused on improving my core programming skills while
+                exploring security-oriented concepts and modern web technologies.
+            </p>
 
-                <p>
-                    I am actively seeking internship and entry-level opportunities where I can learn,
-                    contribute, and grow as a developer.
-                </p>
-            </div>
+            <p>
+                I am actively seeking internship and entry-level opportunities where I can learn,
+                contribute, and grow as a developer.
+            </p>
         </div>
-    </section>
-    <!-- Projects -->
-    <section id="projects">
-        <div class="section-content">
-            <h2>Projects</h2>
-             <div class="projects-grid">
+    </div>
+</section>
+
+<!-- =========================
+     Projects
+     ========================= -->
+<section id="projects">
+    <div class="section-content">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
 
             <div class="project-card">
-                <h3>Project Title</h3>
+                <h3>Personal Portfolio</h3>
+
                 <p>
-                    Short description of the project. What it does, what problem it solves,
-                    and what technologies were used.
+                    A responsive personal portfolio designed to present skills,
+                    projects, and contact information with a modern layout.
                 </p>
+
+                <span>HTML • CSS • Responsive Design</span>
             </div>
 
             <div class="project-card">
-                <h3>Project Title</h3>
-                <p>
-                    Short description of the project. What it does, what problem it solves,
-                    and what technologies were used.
-                </p>
-            </div>
-        </div>
-    </section>
+                <h3>ZIPLO <small>(In Progress)</small></h3>
 
-<!-- Skills -->
+                <p>
+                    A web-based URL shortening platform focused on clean UI,
+                    short link generation, and controlled redirection.
+                </p>
+
+                <span>HTML • CSS • JavaScript</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     Skills
+     ========================= -->
 <section id="skills">
     <div class="section-content">
         <h2>Skills</h2>
 
         <div class="skills-panel">
 
-            <!-- Tabs -->
+            <!-- Tabs (UI ready, JS optional later) -->
             <div class="skills-tabs">
                 <button class="tab active">Programming</button>
                 <button class="tab">Web & Core</button>
@@ -107,80 +133,119 @@
                 <button class="tab">Interests</button>
             </div>
 
-            <!-- Content -->
-            <div class="skills-content">
-
-                <!-- Programming -->
-                <div class="skills-grid active">
-                    <div class="skill-icon" data-label="C">
-                        <img src="icons/c.svg" alt="C">
-                    </div>
-
-                    <div class="skill-icon" data-label="Java">
-                        <img src="icons/java.svg" alt="Java">
-                    </div>
-                    <div class="skill-icon" data-label="Python">
-                        <img src="icons/python.svg" alt="Python">
-                    </div>
-                    <div class="skill-icon" data-label="JavaScript">
-                        <img src="icons/javascript.svg" alt="JavaScript">
-                    </div>
-
+            <!-- Programming -->
+            <div class="skills-grid active">
+                <div class="skill-icon" data-label="C">
+                    <img src="icons/c.svg" alt="C">
                 </div>
 
-                <!-- Web & Core -->
-                <div class="skills-grid">
-                    <div class="skill-icon" data-label="HTML5">
-                        <img src="icons/html5.svg" alt="HTML5">
-                    </div>
-                    <div class="skill-icon" data-label="CSS3">
-                        <img src="icons/css3.svg" alt="CSS3">
-                    </div>
-                    <div class="skill-icon" data-label="DBMS">
-                        <img src="icons/dbms.svg" alt="DBMS">
-                    </div>
-                    <div class="skill-icon" data-label="Responsive Design">
-                        <span>Responsive</span>
-                    </div>
-                    <div class="skill-icon" data-label="Data Structures">
-                        <span>Data Structures</span>
-                    </div>
-                    <div class="skill-icon" data-label="Computer Networks">
-                        <span>Networks</span>
-                    </div>
+                <div class="skill-icon" data-label="Java">
+                    <img src="icons/java.svg" alt="Java">
                 </div>
 
-                <!-- Tools -->
-                <div class="skills-grid">
-                    <div class="skill-icon" data-label="Git">
-                        <img src="icons/git.svg" alt="Git">
-                    </div>
-                    <div class="skill-icon" data-label="GitHub">
-                        <img src="icons/github.svg" alt="GitHub">
-                    </div>
-                    <div class="skill-icon" data-label="VS Code">
-                        <img src="icons/vscode.svg" alt="VS Code">
-                    </div>
+                <div class="skill-icon" data-label="Python">
+                    <img src="icons/python.svg" alt="Python">
                 </div>
 
-                <!-- Interests -->
-                <div class="skills-grid">
-                    <div class="skill-icon" data-label="Cybersecurity">
-                        <img src="icons/security.svg" alt="Cybersecurity">
-                    </div>
-                    <div class="skill-icon" data-label="Problem Solving">
-                        <span>  Problem <br> Solving</span>
-                    </div>
-                    <div class="skill-icon" data-label="System Design">
-                        <span>System Design</span>
-                    </div>
+                <div class="skill-icon" data-label="JavaScript">
+                    <img src="icons/javascript.svg" alt="JavaScript">
+                </div>
+            </div>
+
+            <!-- Web & Core -->
+            <div class="skills-grid">
+                <div class="skill-icon" data-label="HTML5">
+                    <img src="icons/html5.svg" alt="HTML5">
                 </div>
 
+                <div class="skill-icon" data-label="CSS3">
+                    <img src="icons/css3.svg" alt="CSS3">
+                </div>
+
+                <div class="skill-icon" data-label="DBMS">
+                    <img src="icons/dbms.svg" alt="DBMS">
+                </div>
+
+                <div class="skill-icon" data-label="Responsive Design">
+                    <span>Responsive</span>
+                </div>
+
+                <div class="skill-icon" data-label="Data Structures">
+                    <span>Data Structures</span>
+                </div>
+
+                <div class="skill-icon" data-label="Computer Networks">
+                    <span>Networks</span>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skills-grid">
+                <div class="skill-icon" data-label="Git">
+                    <img src="icons/git.svg" alt="Git">
+                </div>
+
+                <div class="skill-icon" data-label="GitHub">
+                    <img src="icons/github.svg" alt="GitHub">
+                </div>
+
+                <div class="skill-icon" data-label="VS Code">
+                    <img src="icons/vscode.svg" alt="VS Code">
+                </div>
+            </div>
+
+            <!-- Interests -->
+            <div class="skills-grid">
+                <div class="skill-icon" data-label="Cybersecurity">
+                    <img src="icons/security.svg" alt="Cybersecurity">
+                </div>
+
+                <div class="skill-icon" data-label="Problem Solving">
+                    <span>Problem<br>Solving</span>
+                </div>
+
+                <div class="skill-icon" data-label="System Design">
+                    <span>System Design</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     Contact
+     ========================= -->
+<section id="contact">
+    <div class="section-content">
+        <h2>Contact</h2>
+
+        <div class="contact-panel">
+            <p class="contact-text">
+                I’m open to internships, collaborations, and learning opportunities.
+                Feel free to reach out.
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:navyamariam16@gmail.com" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+
+                <a href="https://github.com/NavyaMariamJohn" target="_blank" class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="#" target="_blank" class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
             </div>
         </div>
     </div>
 </section>
 <script src="script.js"></script>
+
 </body>
-</html>
 </html>
