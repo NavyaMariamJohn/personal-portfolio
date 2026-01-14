@@ -202,6 +202,13 @@ nav ul li a:hover::after {
 /* =========================
    About Section
    ========================= */
+#about .section-content {
+    text-align: left;
+}
+
+#about h2 {
+    text-align: left;
+}
 
 .about-text p {
     font-size: 17px;
