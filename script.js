@@ -1,13 +1,16 @@
-const navLinks = document.querySelectorAll("nav a");
-navLinks.forEach(link => {
-    link.addEventListener("click", function (event) {
-        event.preventDefault();
+// Skills Tabs Logic
+const tabs = document.querySelectorAll(".skills-tabs .tab");
+const grids = document.querySelectorAll(".skills-grid");
 
-        const targetId = this.getAttribute("href");
-        const targetSection = document.querySelector(targetId);
+tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
 
-        targetSection.scrollIntoView({
-            behavior: "smooth"
-        });
+        // Remove active states
+        tabs.forEach(t => t.classList.remove("active"));
+        grids.forEach(g => g.classList.remove("active"));
+
+        // Activate clicked tab + corresponding grid
+        tab.classList.add("active");
+        grids[index].classList.add("active");
     });
 });
