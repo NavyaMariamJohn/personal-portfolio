@@ -1,10 +1,13 @@
-/* Reset */
+/* =========================
+   Reset & Base
+   ========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Base */
+
 html {
     scroll-behavior: smooth;
 }
@@ -29,7 +32,19 @@ a {
     text-decoration: none;
     color: white;
 }
-/* Navigation */
+
+section {
+    position: relative;
+}
+
+section h2 {
+    letter-spacing: 0.5px;
+}
+
+/* =========================
+   Navigation
+   ========================= */
+
 header {
     width: 100%;
     padding: 20px 60px;
@@ -65,12 +80,16 @@ nav ul li a {
 nav ul li a:hover {
     opacity: 1;
 }
-/* Home section */
+
+/* =========================
+   Home Section
+   ========================= */
+
 #home {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 0 80px;
+    padding: 0 80px 60px;
     gap: 60px;
 }
 
@@ -96,7 +115,9 @@ nav ul li a:hover {
     opacity: 0.85;
     margin-bottom: 35px;
 }
+
 /* Buttons */
+
 .buttons {
     display: flex;
     gap: 16px;
@@ -109,7 +130,7 @@ nav ul li a:hover {
     font-weight: 500;
     transition: all 0.3s ease;
 }
-/* Primary button */
+
 .btn-primary {
     background: #7f5cff;
 }
@@ -118,7 +139,7 @@ nav ul li a:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(127, 92, 255, 0.45);
 }
-/* Secondary button */
+
 .btn-secondary {
     border: 1px solid rgba(255,255,255,0.4);
 }
@@ -126,13 +147,15 @@ nav ul li a:hover {
 .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.08);
 }
-/* Right side */
+
+/* Photo */
+
 .home-right {
     flex: 1;
     display: flex;
     justify-content: center;
 }
-/* Photo */
+
 .photo-circle {
     width: 280px;
     height: 280px;
@@ -150,12 +173,225 @@ nav ul li a:hover {
     object-fit: cover;
     object-position: center 8%;
 }
-/*Responsive Design */
 
-/* Tablets and smaller laptops */
+/* =========================
+   About Section
+   ========================= */
+
+#about {
+    padding: 80px 80px;
+    scroll-margin-top: 100px;
+}
+
+#about .section-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.about-text p {
+    font-size: 17px;
+    line-height: 1.75;
+    opacity: 0.9;
+    margin-bottom: 26px;
+}
+
+/* =========================
+   Projects Section
+   ========================= */
+
+#projects {
+    padding: 100px 80px 120px;
+}
+
+#projects .section-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#projects h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    padding: 30px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   Skills Section (FINAL)
+   ========================= */
+
+#skills {
+    padding: 100px 80px;
+    scroll-margin-top: 100px;
+}
+
+#skills .section-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#skills h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Panel */
+
+.skills-panel {
+    padding: 32px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+}
+
+/* Tabs */
+
+.skills-tabs {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 36px;
+}
+
+.skills-tabs .tab {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0.65;
+    cursor: pointer;
+    padding-bottom: 6px;
+    position: relative;
+}
+
+.skills-tabs .tab.active {
+    opacity: 1;
+}
+
+.skills-tabs .tab.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #7f5cff;
+}
+
+/* Icon Grid — MAX 4 per row */
+
+.skills-grid {
+    display: none;
+    grid-template-columns: repeat(4, minmax(110px, 1fr));
+    column-gap: 44px;   /* more horizontal space */
+    row-gap: 40px;      /* more vertical breathing */
+    justify-content: center; /* center the grid itself */
+    justify-items: center;   /* center items in each row */
+    animation: fadeIn 0.3s ease;
+}
+
+
+
+.skills-grid.active {
+    display: grid;
+}
+
+/* Skill Cards */
+
+.skill-icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-icon img {
+    width: 44px;
+    height: 44px;
+    opacity: 0.85;
+    filter: brightness(0) invert(1);
+    transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+.skill-icon:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.4);
+}
+
+/* Hover: black icon + colored glow */
+
+.skill-icon:hover img {
+    opacity: 1;
+    filter: brightness(0)
+            drop-shadow(0 0 8px rgba(111, 205, 237, 0.67));
+}
+
+/* Skill label on hover */
+
+.skill-icon::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.skill-icon:hover::after {
+    opacity: 0.9;
+    transform: translateX(-50%) translateY(4px);
+}
+
+/* =========================
+   Animations
+   ========================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
 @media (max-width: 1024px) {
     #home {
-        padding: 0 50px;
+        padding: 0 50px 60px;
         gap: 40px;
     }
 
@@ -167,8 +403,13 @@ nav ul li a:hover {
         width: 240px;
         height: 240px;
     }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
 }
-/* Mobile devices */
+
 @media (max-width: 768px) {
     header {
         padding: 16px 30px;
@@ -182,10 +423,6 @@ nav ul li a:hover {
         flex-direction: column-reverse;
         text-align: center;
         padding: 120px 30px 60px;
-    }
-
-    .home-left {
-        align-items: center;
     }
 
     .home-left h1 {
@@ -205,8 +442,22 @@ nav ul li a:hover {
         height: 220px;
         margin-bottom: 30px;
     }
+
+    #about,
+    #projects,
+    #skills {
+        padding: 80px 30px;
+    }
+
+    .skills-panel {
+        padding: 24px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-/* Very small phones */
+
 @media (max-width: 480px) {
     .home-left h1 {
         font-size: 36px;
@@ -219,76 +470,4 @@ nav ul li a:hover {
     nav ul {
         display: none;
     }
-}
-/*About Section*/
-
-#about {
-    padding: 70px 80px;
-    scroll-margin-top: 100px;
-}
-
-
-#about .section-content {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-#about h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-
-.about-text p {
-    font-size: 17px;
-    line-height: 1.7;
-    opacity: 0.9;
-    margin-bottom: 22px;
-}
-/*  Projects Section */
-
-#projects {
-    padding: 100px 80px;
-}
-
-#projects .section-content {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-#projects h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 50px;
-}
-
-/* Grid */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.project-card {
-    padding: 30px;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(6px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card h3 {
-    font-size: 20px;
-    margin-bottom: 12px;
-}
-
-.project-card p {
-    font-size: 15px;
-    line-height: 1.6;
-    opacity: 0.85;
-}
-
-.project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
